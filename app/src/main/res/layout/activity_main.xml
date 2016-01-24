@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.blooddonate.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bloodwp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:elevation="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/us_text"
+        android:layout_below="@id/intro_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:elevation="7dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/us_text"
+        android:background="#ffffff"
+        >
+        <Button
+            style="@style/Buttons"
+            android:text="Blood Donate"
+            android:background="#7cb342"
+            android:textColor="#ffffff"
+            android:onClick="donate"
+            />
+
+        <Button
+            style="@style/Buttons"
+            android:text="blood receive"
+            android:background="#ff5722"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
